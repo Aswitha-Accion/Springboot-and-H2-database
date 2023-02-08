@@ -1,20 +1,28 @@
 package com.emp.service;
 import com.emp.entity.Employee;
+import com.emp.entity.EmployeeNotFoundException;
 
 import java.util.List;
-
 public interface EmployeeService {
-    public Employee getEmpById(String id);
 
-    public String saveEmployee(Employee emp);
+    public String addEmployee(Employee employee);
 
-    public String deleteEmployee(String id);
+    public List<Employee> getAllEmployee();
 
-    public String updateEmployee(Employee employee);
+    public String deleteEmployee(Integer empId);
 
-    public List getAllEmployees();
+    public Employee getEmployeeById(int id);
 
-    public String findEmployee(String id);
+    /*
+     * public List<Employee> fetchEmployeeByLocation(String location1,String
+     * location2);
+     */
 
-    public String FindAllEmployee(Employee employee);
+    public String updateEmployee(Employee employee) throws EmployeeNotFoundException;
+
+    public String deleteEmployeeById(Integer empId) throws EmployeeNotFoundException;
+
 }
+
+
+
