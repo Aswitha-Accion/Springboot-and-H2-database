@@ -12,9 +12,6 @@ import org.springframework.data.repository.query.Param;
 
 
 public interface EmployeeRepository extends JpaRepository<Employee,Serializable> {
+   public Employee findByActive(int active);
 
-    /*
-     * @Query("from EMPLOYEE where emp_location in (l1:l2) order by location")
-     * public List<Employee> getEmployeeByLocation(@Param("l1") String
-     * location1,@Param("l2") String location);
-     */}
+}

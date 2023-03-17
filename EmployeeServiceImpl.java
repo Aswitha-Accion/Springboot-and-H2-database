@@ -126,6 +126,7 @@ public class EmployeeServiceImpl implements EmployeeService {
     }
 
     /*
+     * added new comment line
      * @Override public List<Employee> fetchEmployeeByLocation(String location1,
      * String location2) { List<Employee> list =
      * repository.getEmployeeByLocation(location1, location2); return list; }
